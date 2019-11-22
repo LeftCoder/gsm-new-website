@@ -1,0 +1,21 @@
+.adminnavbar {
+  .navbar-collapse .navbar-nav {
+    margin: 0;
+    justify-content: flex-end;
+    a {
+      color: #707070;
+    }
+    .dropdown-menu.show {
+      width: 200px;
+      right: 15px;
+      a {
+        display: flex;
+        justify-content: space-between;
+        i {
+          font-size: 1.6rem;
+          color: #707070;
+        }
+      }
+    }
+  }
+}

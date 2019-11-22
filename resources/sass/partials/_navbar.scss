@@ -1,0 +1,110 @@
+.navbar {
+  position: relative;
+  margin-bottom: 200px;
+  padding: 5px 0;
+  background-color: transparent;
+  height: 70px;
+  @media (max-width: 1024px) {
+    background-color: #fff;
+  }
+  @media (max-width: 320px) {
+    margin-bottom: 100px;
+  }
+  @media (min-width: 321px) and (max-width: 420px) {
+    margin-bottom: 150px;
+  }
+  @media (min-width: 421px) and (max-width: 768px) {
+    margin-bottom: 230px;
+  }
+  .half-circle {
+    position: absolute;
+    top: -5px;
+    left: calc(50% - 150px);
+    a {
+      padding: 0;
+      margin: 0;
+      img {
+        height: 135px;
+      }
+    }
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+  @media (max-width: 1024px) {
+    .hidden-logo-link {
+      position: absolute;
+      right: 0;
+      .hidden-logo {
+        width: 125px;
+        height: 50px;
+        background: url("/images/only-logo.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+    .navbar-toggler {
+      position: absolute;
+      top: 12px;
+      left: 0px;
+      .navbar-toggler-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #31afd5;
+        font-size: 2.5rem;
+      }
+    }
+    #navbarNavAltMarkup {
+      margin-top: 65px;
+      flex-direction: column;
+      z-index: 1;
+      .navbar-nav {
+        margin: 0;
+        background-color: #fff;
+        align-items: flex-start;
+        padding-top: 10px;
+        .left-side,
+        .right-side {
+          flex-direction: column;
+          align-items: flex-start;
+          a {
+            color: #31afd5;
+            padding: 0 0 0 15px;
+          }
+        }
+        .right-side {
+          .contact-button {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+    .navbar-nav {
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 200px;
+      width: 100%;
+      .left-side {
+        a:first-of-type {
+          padding-left: 0;
+        }
+      }
+      .left-side,
+      .right-side {
+        display: flex;
+        align-items: center;
+      }
+      a {
+        color: $contrast-font-color;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 0 15px;
+      }
+    }
+  }
+}

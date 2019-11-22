@@ -1,0 +1,29 @@
+##backend##
+# zmiana ścieżki do strony logowania
+# formularz logowania css
+# dodawanie i edycja postów i punktów na mapę, sprawdzanie formularzy
+# hover po najechaniu na folder z galeria
+# wyświetlanie zdjęć w pojedyńczej galerii w kolumnach
+# publikowanie i nie publikowanie postów i punktów (aktualizację w tabela w db i migracjach oraz seederach)
+# komponent to wyszukiwania cssy poprawić
+# przycisk do wylogowania
+
+##frontend##
+# zamiast liczby telefonów liczba zdjec w galerii, albo lat na rynku
+# dodać zdjęcia do głównej galerii
+# hover na zdjeciu ma pokazywać nazwę punktu z którego jest zdjęcie
+# podpisy do zdjęć przy powiększeniu
+# sekcja o nas zmiana zdjęcia i tekstu
+# aktualności mała końcówka z trzech części na dole przy timeline
+# sprzedaj smartfona i kariera cssy żeby to jakoś wyglądało
+# serwis poprawić wyszukiwanie, delikatne zmiany w css
+# pole wyszukiwania serwisu cssy
+# w prawym dolnym rogu ikona umożliwiająca kontakt z serwisem w formie słuchawki
+
+# efekty pojawiania się elementów na stronie (animate onscroll)
+- rwd całej strony
+# helmet component dla vue czyli SEO dla całej witryny
+- optymalizacja kodu (optymalizacja zdjęć, produkcyjna wersja kodu)
+- deployment
+- google seo
+- testy

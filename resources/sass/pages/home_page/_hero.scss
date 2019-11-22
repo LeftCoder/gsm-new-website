@@ -1,0 +1,57 @@
+.hero-wrapper {
+  background: url("/images/hero-bg.svg") no-repeat;
+  background-position: bottom;
+  height: 850px;
+  @media (max-width: 420px) {
+    height: 100vh;
+  }
+  .home-header {
+    display: flex;
+    align-items: center;
+    @media (max-width: 420px) {
+      justify-content: center;
+    }
+    .header-description {
+      flex-direction: column;
+      display: flex;
+      h1 {
+        color: $contrast-font-color;
+        margin-bottom: 65px;
+        @media (max-width: 420px) {
+          font-size: 3rem;
+          text-align: center;
+        }
+      }
+      @media (max-width: 420px) {
+        a {
+          text-align: center;
+        }
+      }
+      button {
+        font-weight: 500;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 10px 0;
+        width: 150px;
+        border: 3px solid $contrast-font-color;
+        border-radius: 20px;
+        &:hover {
+          color: #0d6bd9;
+        }
+        @media (max-width: 420px) {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    .carousel-3d-container {
+      @media (max-width: 420px) {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}

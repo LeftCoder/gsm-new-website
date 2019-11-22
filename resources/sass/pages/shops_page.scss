@@ -1,0 +1,15 @@
+.shops-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+  @media (max-width: 420px) {
+    margin-bottom: 75px;
+    .shop-list {
+      overflow: hidden;
+      height: auto;
+    }
+    .vue-map-container {
+      display: none;
+    }
+  }
+}

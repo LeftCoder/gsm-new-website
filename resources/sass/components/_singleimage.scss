@@ -1,0 +1,18 @@
+.single-image {
+  position: relative;
+  .delete-image {
+    color: red;
+    font-size: 2rem;
+    z-index: 2;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &:hover .delete-image {
+    opacity: 1;
+    cursor: pointer;
+  }
+}

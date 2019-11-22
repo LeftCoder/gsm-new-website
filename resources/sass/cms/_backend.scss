@@ -1,0 +1,53 @@
+.adminnavbar {
+  margin-bottom: 0;
+}
+.admin-backend {
+  padding: 0;
+  display: grid;
+  height: calc(100vh - 50px);
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 1fr;
+  .side-panel {
+    background-color: $side-panel-admin;
+    ul {
+      padding: 0;
+      list-style: none;
+      li {
+        padding: 15px;
+        a {
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+        a:hover {
+          text-decoration: none;
+          color: $contrast-font-color;
+        }
+        &.active a {
+          color: $contrast-font-color;
+        }
+      }
+    }
+  }
+  .main-panel {
+    padding: 15px;
+
+    .cards-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      .card {
+        flex: 1;
+        margin: 0 15px;
+        .card-header {
+          color: $secondary-font-color;
+          font-weight: bold;
+        }
+        .card-body {
+          background-color: $background-color;
+          text-align: center;
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}

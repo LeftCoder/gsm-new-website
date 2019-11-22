@@ -1,0 +1,75 @@
+.page-hero {
+  margin-bottom: 200px;
+  @media (max-width: 420px) {
+    margin-bottom: 130px;
+  }
+  .navbar {
+    background-color: $main-details-color;
+    @media (max-width: 1024px) {
+      margin-bottom: 100px;
+      background-color: #fff;
+    }
+  }
+  .page-header {
+    display: flex;
+    justify-content: space-around;
+    .left-side {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 3px solid #31afd5;
+      border-radius: 20px;
+      padding: 20px;
+      position: relative;
+      @media (max-width: 420px) {
+        display: none;
+      }
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -35px;
+        left: -25px;
+        width: 130px;
+        height: 100px;
+        background-color: $floating-squares-color;
+        border-radius: 20px;
+        z-index: -1;
+      }
+      img {
+        width: 100px;
+        height: 50px;
+      }
+    }
+    .right-side {
+      align-self: center;
+      width: 700px;
+      h1 {
+        color: $secondary-font-color;
+        font-weight: 700;
+        position: relative;
+        font-size: 4rem;
+        @media (max-width: 420px) {
+          font-size: 2.5rem;
+          text-align: center;
+        }
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: -50px;
+          right: 0;
+          width: 300px;
+          height: 210px;
+          background-color: $floating-squares-color;
+          border-radius: 20px;
+          z-index: -1;
+          @media (max-width: 420px) {
+            width: 175px;
+            height: 150px;
+          }
+        }
+      }
+    }
+  }
+}

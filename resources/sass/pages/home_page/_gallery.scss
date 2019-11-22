@@ -1,0 +1,43 @@
+#gallery {
+  position: relative;
+  @media (max-width: 420px) {
+    background-color: $section-mobile-color;
+    padding: 50px 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -350px;
+    display: block;
+    width: 330px;
+    height: 640px;
+    background: url("/images/half-circle-left.svg") no-repeat;
+    @media (max-width: 1600px) {
+      display: none;
+    }
+  }
+  .gallery-wrapper {
+    display: flex;
+    margin-bottom: 200px;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 420px) {
+      margin-bottom: 0;
+      .gallery-preview {
+        column-count: 1;
+        margin-bottom: 50px;
+      }
+      .image-wrapper ~ .image-wrapper {
+        display: none;
+      }
+    }
+    @media (min-width: 421px) and (max-width: 768px) {
+      margin-bottom: 100px;
+      .gallery-preview {
+        column-count: 2;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@mixin cta_button($color, $width) {
+  color: $color;
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 0;
+  width: $width;
+  border: 3px solid $color;
+  border-radius: 20px;
+}

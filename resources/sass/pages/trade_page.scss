@@ -1,0 +1,23 @@
+.trade-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+  @media (max-width: 420px) {
+    margin-bottom: 75px;
+  }
+  .trade-wrapper {
+    font-family: "Roboto", sans-serif;
+    border: 3px solid $gallery-empty;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 500;
+    color: #707070;
+    p {
+      margin: 0;
+    }
+  }
+}

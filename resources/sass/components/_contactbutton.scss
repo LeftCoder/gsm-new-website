@@ -1,0 +1,109 @@
+.hero-wrapper {
+  .contact-button {
+    .contact-btn {
+      &:hover {
+        color: #0d6bd9;
+      }
+    }
+  }
+}
+
+.contact-button {
+  .contact-btn {
+    font-weight: 500;
+    border: 3px solid $contrast-font-color;
+    width: 120px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    &:hover {
+      border-color: #fff;
+      color: $hover-color;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    background-color: $contact-bg-color;
+    border-top: 3px solid $secondary-font-color;
+    h2 {
+      margin-bottom: 60px;
+      font-size: 3.5rem;
+      font-weight: 400;
+      color: $main-font-color;
+    }
+    form {
+      width: 500px;
+      .first-part {
+        display: flex;
+        justify-content: space-between;
+      }
+      textarea,
+      input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $input-underline;
+        border-radius: 0;
+        outline: none;
+        height: 3rem;
+        width: 100%;
+        font-size: 1.6rem;
+        margin: 0 0 8px 0;
+        padding: 0;
+        box-shadow: none;
+        color: $input-color;
+        transition: box-shadow 0.3s, border 0.3s, -webkit-box-shadow 0.3s;
+        &::placeholder {
+          color: $placeholder-color;
+        }
+        &:focus {
+          border-bottom: 1px solid $secondary-font-color;
+          box-shadow: 0 1px 0 0 $secondary-font-color;
+        }
+        &.is-invalid {
+          border-color: $error-color;
+          &:focus {
+            border-bottom: 1px solid $error-color;
+            box-shadow: 0 1px 0 0 $error-color;
+          }
+        }
+      }
+      textarea {
+        height: auto;
+        resize: none;
+      }
+      .buttons {
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-end;
+
+        button:first-of-type {
+          letter-spacing: 1px;
+          font-weight: 500;
+          color: $contrast-font-color;
+          background-color: $secondary-font-color;
+          border: 3px solid $secondary-font-color;
+          width: 120px;
+          padding: 5px 10px;
+          border-radius: 20px;
+          text-transform: uppercase;
+        }
+        button:nth-of-type(2) {
+          letter-spacing: 1px;
+          font-weight: 400;
+          border: none;
+          color: $secondary-font-color;
+          width: 120px;
+          padding: 5px 10px;
+          border-radius: 20px;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .invalid-feedback {
+      text-align: left;
+    }
+  }
+}

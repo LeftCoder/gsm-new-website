@@ -1,0 +1,92 @@
+#news {
+  position: relative;
+  @media (max-width: 420px) {
+    padding: 50px 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 550px;
+    display: block;
+    width: 330px;
+    height: 640px;
+    background: url("/images/half-circle-right.svg") no-repeat;
+    @media (max-width: 1600px) {
+      display: none;
+    }
+  }
+  .news-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+    position: relative;
+    @media (max-width: 420px) {
+      margin-bottom: 0;
+    }
+    @media (min-width: 421px) and (max-width: 768px) {
+      margin-bottom: 100px;
+    }
+    .articles {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 50px;
+      position: relative;
+      @media (max-width: 420px) {
+        margin-bottom: 15px;
+      }
+      @media (min-width: 768px) and (max-width: 1200px) {
+        margin-bottom: 0;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url("/images/timeline.svg");
+        background-repeat: no-repeat;
+        background-size: 80%;
+        display: block;
+        width: 77px;
+        height: 800px;
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+      .single-article {
+        margin-left: 77px;
+        width: 1080px;
+        height: 310px;
+        @media (max-width: 768px) {
+          width: auto;
+          height: auto;
+          margin-left: 0;
+          margin-bottom: 50px;
+        }
+        @media (min-width: 789px) and (max-width: 1200px) {
+          width: auto;
+          height: 300px;
+          margin-left: 77px;
+          margin-bottom: 0;
+        }
+        span {
+          font-weight: 700;
+          display: inline-block;
+          font-size: 1.6rem;
+        }
+        h3 {
+          color: $secondary-font-color;
+          margin-bottom: 30px;
+        }
+        div {
+          font-size: 2rem;
+          @media (max-width: 420px) {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}

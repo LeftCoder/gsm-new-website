@@ -1,0 +1,64 @@
+.preview-wrapper {
+  .gallery-preview {
+    margin-bottom: 100px;
+    width: 100%;
+    column-count: 4;
+    column-gap: 0.6em;
+    .blueimp-gallery {
+      .title {
+        color: #31afd5;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+    .image-wrapper {
+      position: relative;
+      &:hover {
+        cursor: pointer;
+      }
+      &:hover .overlay {
+        opacity: 0.9;
+      }
+      .image {
+        display: inline-block;
+        margin: 0 0 0.3em;
+        width: 100%;
+        position: relative;
+      }
+      .overlay {
+        color: #fff;
+        pointer-events: none;
+        display: flex;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 500;
+        justify-content: center;
+        align-items: center;
+        background-color: #31afd5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0.25em;
+        right: 0;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        z-index: 2;
+      }
+    }
+  }
+
+  .gallery-empty {
+    font-family: "Roboto", sans-serif;
+    border: 3px solid $gallery-empty;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 500;
+    color: #707070;
+  }
+}

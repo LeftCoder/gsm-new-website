@@ -1,0 +1,38 @@
+#offer {
+  .offer-wrapper {
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    @media (max-width: 420px) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0;
+    }
+    @media (min-width: 421px) and (max-width: 768px) {
+      margin-bottom: 100px;
+    }
+    .tile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      @media (max-width: 420px) {
+        margin-bottom: 30px;
+      }
+      .tile-image {
+        height: 35px;
+        margin-bottom: 20px;
+        @media (max-width: 420px) {
+          margin-bottom: 10px;
+        }
+      }
+      span {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

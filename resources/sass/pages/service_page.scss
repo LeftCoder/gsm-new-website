@@ -1,0 +1,35 @@
+@media (max-width: 420px) {
+  .service-content {
+    .device-results {
+      margin-bottom: 75px;
+      .filter-bar {
+        padding: 0 20px;
+        margin-bottom: 75px;
+        input {
+          height: 40px;
+          font-size: 1.6rem;
+        }
+      }
+      .results-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.service-contact {
+  position: fixed;
+  z-index: 1000;
+  bottom: 50px;
+  right: 50px;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  @media (max-width: 420px) {
+    width: 45px;
+    height: 45px;
+    bottom: 25px;
+    right: 25px;
+  }
+}

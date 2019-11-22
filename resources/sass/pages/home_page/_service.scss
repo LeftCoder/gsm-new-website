@@ -1,0 +1,104 @@
+#service {
+  position: relative;
+  @media (max-width: 420px) {
+    background-color: $section-mobile-color;
+    padding: 50px 0;
+  }
+  .service-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+    @media (max-width: 420px) {
+      margin-bottom: 0;
+    }
+    @media (min-width: 421px) and (max-width: 768px) {
+      margin-bottom: 100px;
+    }
+    @media (max-width: 768px) {
+      align-items: flex-start;
+      .section-title {
+        margin: 0 auto 50px auto;
+      }
+      .cta {
+        margin: 0 auto;
+      }
+    }
+    .service-content {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 200px;
+      @media (max-width: 768px) {
+        margin-bottom: 50px;
+        justify-content: flex-start;
+      }
+      .service-image {
+        position: relative;
+        width: 350px;
+        border-radius: 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("/images/service-photo.jpg");
+        @media (max-width: 768px) {
+          display: none;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50px;
+          left: -50px;
+          border: 3px solid $secondary-font-color;
+          width: 350px;
+          height: 300px;
+          border-radius: 20px;
+          z-index: -1;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 100px;
+          left: 50px;
+          background-color: $floating-squares-color;
+          width: 350px;
+          height: 300px;
+          border-radius: 20px;
+          z-index: -2;
+        }
+        img {
+          width: 350px;
+          height: 560px;
+          border-radius: 20px;
+        }
+      }
+      .service-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $secondary-font-color;
+        margin-left: 200px;
+        @media (max-width: 768px) {
+          margin-left: 0;
+        }
+        @media (min-width: 769px) and (max-width: 1200px) {
+          margin-left: 90px;
+        }
+        h2 {
+          margin-bottom: 50px;
+          font-size: 4rem;
+          @media (max-width: 420px) {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+          }
+        }
+        p {
+          color: $main-font-color;
+          font-size: 2.5rem;
+          @media (max-width: 420px) {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}

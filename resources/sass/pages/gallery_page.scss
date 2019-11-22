@@ -1,0 +1,50 @@
+.gallery-content {
+  display: flex;
+  flex-direction: column;
+  .gallery-cities {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    @media (max-width: 420px) {
+      display: none;
+    }
+    a {
+      display: block;
+      padding: 15px 30px;
+      color: $main-font-color;
+    }
+  }
+  @media (max-width: 420px) {
+    margin-bottom: 0;
+    .gallery-preview {
+      column-count: 1;
+      margin-bottom: 0;
+    }
+    .image-wrapper ~ .image-wrapper {
+      display: none;
+    }
+  }
+  .single-gallery {
+    margin-bottom: 100px;
+    @media (max-width: 420px) {
+      margin-bottom: 75px;
+      .preview-wrapper .gallery-empty {
+        font-size: 1.3rem;
+        padding: 10px;
+      }
+    }
+    h3 {
+      color: $secondary-font-color;
+      margin-bottom: 30px;
+      @media (max-width: 420px) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
