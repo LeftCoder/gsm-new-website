@@ -14,7 +14,7 @@ window.Vue = Vue;
 
 Vue.use(VueGoogleMaps, {
   load: {
-    key: "AIzaSyC6OHJWJ2alhTu2gsx4wDC-hYV9U5UhSbU",
+    key: "",
     libraries: "places",
     region: "PL",
     language: "pl"

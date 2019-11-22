@@ -86500,7 +86500,7 @@ __webpack_require__.r(__webpack_exports__);
 window.Vue = vue__WEBPACK_IMPORTED_MODULE_0___default.a;
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue2_google_maps__WEBPACK_IMPORTED_MODULE_9__, {
   load: {
-    key: "AIzaSyC6OHJWJ2alhTu2gsx4wDC-hYV9U5UhSbU",
+    key: "",
     libraries: "places",
     region: "PL",
     language: "pl"
