@@ -4,6 +4,7 @@
   height: 850px;
   @media (max-width: 420px) {
     height: 100vh;
+    min-height: 568px;
   }
   .home-header {
     display: flex;

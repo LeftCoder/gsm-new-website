@@ -17984,6 +17984,7 @@ footer .footer-wrapper .footer-copy {
 @media (max-width: 420px) {
   .hero-wrapper {
     height: 100vh;
+    min-height: 568px;
   }
 }
 
@@ -18429,7 +18430,7 @@ footer .footer-wrapper .footer-copy {
   font-size: 4rem;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 768px) {
   #service .service-wrapper .service-content .service-text h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
@@ -18444,6 +18445,12 @@ footer .footer-wrapper .footer-copy {
 @media (max-width: 420px) {
   #service .service-wrapper .service-content .service-text p {
     font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+  #service .service-wrapper .service-content .service-text p {
+    font-size: 2rem;
   }
 }
 

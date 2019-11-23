@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-xl">
   <div class="half-circle">
     <a class="navbar-brand" href="/">
       <img src="{{ asset('images/main-logo.png') }}" alt="Logo">

@@ -27,4 +27,10 @@ class ShopQueries {
       ->pluck('shop_name')
       ->toArray();
   }
+
+  public function getCitiesCounter() {
+    return Shop::selectRaw('city_name')
+      ->distinct()
+      ->count('city_name');
+  }
 }

@@ -17,6 +17,8 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+        @include('partials.analytics')
     </head>
     <body class="theme-light">
         <div id="app">

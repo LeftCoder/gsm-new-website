@@ -34,7 +34,7 @@
     <div class="offer-wrapper container">
       <div class="tile">
         <img class="tile-image" src="{{asset('/images/home-icon.svg')}}">
-        <count :to="13"></count>
+        <count :to="{{ $citiesCounter }}"></count>
         <p>miast w Polsce</p>
       </div>
       <div class="tile">

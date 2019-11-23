@@ -10,8 +10,11 @@ class PagesController extends Controller
     $twoLatestPosts = (new \App\Queries\PostQueries)->getLatest(2);
     $shopCounter = (new \App\Shop)->shopCounter();
     $partListCounter = (new \App\Part)->partListCounter();
+    $citiesCounter = (new \App\Queries\ShopQueries)->getCitiesCounter();
 
-    return view('pages.index', compact('shopCounter', 'partListCounter', 'twoLatestPosts'));
+    return 
+          view('pages.index', 
+          compact('shopCounter', 'partListCounter', 'twoLatestPosts', 'citiesCounter'));
   }
 
   public function news() {
