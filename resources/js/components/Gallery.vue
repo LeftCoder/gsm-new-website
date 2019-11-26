@@ -43,18 +43,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss" scoped>
-.gallery-empty {
-  font-family: "Roboto", sans-serif;
-  border: 3px solid #f2f2f2;
-  border-radius: 20px;
-  padding: 20px;
-  width: 100%;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-  font-weight: 500;
-  color: #707070;
-}
-</style>

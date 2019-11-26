@@ -16517,14 +16517,14 @@ readers do not read off random characters that represent icons */
   --page-background-color: #fff;
   --page-details-color: #0045b7;
   --contact-bg-color: #fff;
-  --section-title-color: #707070;
-  --input-color: #707070;
+  --section-title-color: $main-font-color;
+  --input-color: $main-font-color;
   --hover-color: #0d6bd9;
   --floating-squares-color: #eff9fc;
   --card-bg-color: #fff;
   --card-bg-active-color: #edeeee;
   --card-bg-hover-color: #f7f7f7;
-  --gallery-empty: #f7f7f7;
+  --empty-border: #f7f7f7;
   --section-mobile-color: #edeeee;
 }
 
@@ -16539,7 +16539,7 @@ readers do not read off random characters that represent icons */
   --card-bg-color: #2f2f40;
   --card-bg-active-color: #475170;
   --card-bg-hover-color: #475170;
-  --gallery-empty: #2f2f40;
+  --empty-border: #2f2f40;
   --section-mobile-color: #222029;
 }
 
@@ -17238,6 +17238,19 @@ footer .footer-wrapper .footer-copy {
   font-size: 1.6rem;
 }
 
+.gallery-empty {
+  font-family: "Roboto", sans-serif;
+  border: 3px solid var(--empty-border);
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 500;
+  color: #707070;
+}
+
 .preview-wrapper .gallery-preview {
   margin-bottom: 100px;
   width: 100%;
@@ -17311,19 +17324,6 @@ footer .footer-wrapper .footer-copy {
     font-size: 2rem;
     padding: 5px;
   }
-}
-
-.preview-wrapper .gallery-empty {
-  font-family: "Roboto", sans-serif;
-  border: 3px solid var(--gallery-empty);
-  border-radius: 20px;
-  padding: 20px;
-  width: 100%;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-  font-weight: 500;
-  color: #707070;
 }
 
 .hero-wrapper .contact-button .contact-btn:hover {
@@ -17951,7 +17951,7 @@ footer .footer-wrapper .footer-copy {
 }
 
 .device-results .results-wrapper .single-result {
-  border: 3px solid var(--gallery-empty);
+  border: 3px solid var(--empty-border);
   border-radius: 20px;
   padding: 15px;
   display: flex;
@@ -17982,7 +17982,7 @@ footer .footer-wrapper .footer-copy {
 
 .device-results .results-empty {
   font-family: "Roboto", sans-serif;
-  border: 3px solid var(--gallery-empty);
+  border: 3px solid var(--empty-border);
   border-radius: 20px;
   padding: 20px;
   width: 100%;
@@ -17999,7 +17999,7 @@ footer .footer-wrapper .footer-copy {
 
 .articles-wrapper .articles-empty {
   font-family: "Roboto", sans-serif;
-  border: 3px solid var(--gallery-empty);
+  border: 3px solid var(--empty-border);
   border-radius: 20px;
   padding: 20px;
   width: 100%;
@@ -18261,13 +18261,7 @@ footer .footer-wrapper .footer-copy {
   position: relative;
 }
 
-@media (max-width: 420px) {
-  #news .news-wrapper .articles {
-    margin-bottom: 15px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
   #news .news-wrapper .articles {
     margin-bottom: 0;
   }
@@ -18296,13 +18290,19 @@ footer .footer-wrapper .footer-copy {
   width: 100%;
 }
 
+@media (max-width: 1200px) {
+  #news .news-wrapper .articles.empty {
+    margin-bottom: 30px;
+  }
+}
+
 #news .news-wrapper .articles.empty::before {
   display: none;
 }
 
 #news .news-wrapper .articles.empty .articles-empty {
   font-family: "Roboto", sans-serif;
-  border: 3px solid #f2f2f2;
+  border: 3px solid var(--empty-border);
   border-radius: 20px;
   padding: 20px;
   width: 100%;
@@ -18311,6 +18311,12 @@ footer .footer-wrapper .footer-copy {
   text-align: center;
   font-weight: 500;
   color: #707070;
+}
+
+@media (max-width: 768px) {
+  #news .news-wrapper .articles.empty .articles-empty {
+    font-size: 1.3rem;
+  }
 }
 
 #news .news-wrapper .articles .single-article {
@@ -18664,7 +18670,7 @@ footer .footer-wrapper .footer-copy {
 
 .trade-content .trade-wrapper {
   font-family: "Roboto", sans-serif;
-  border: 3px solid var(--gallery-empty);
+  border: 3px solid var(--empty-border);
   border-radius: 20px;
   padding: 20px;
   width: 100%;
@@ -18788,6 +18794,17 @@ footer .footer-wrapper .footer-copy {
     bottom: 25px;
     right: 25px;
   }
+}
+
+.service-contact button {
+  opacity: 1;
+  background-color: #31afd5;
+  color: #fff;
+}
+
+.service-contact button:hover {
+  color: #fff;
+  background-color: #31afd5;
 }
 
 .career-content {

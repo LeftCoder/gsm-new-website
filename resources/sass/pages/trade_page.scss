@@ -7,7 +7,7 @@
   }
   .trade-wrapper {
     font-family: "Roboto", sans-serif;
-    border: 3px solid $gallery-empty;
+    border: 3px solid $empty-border;
     border-radius: 20px;
     padding: 20px;
     width: 100%;
@@ -15,7 +15,7 @@
     letter-spacing: 2px;
     text-align: center;
     font-weight: 500;
-    color: #707070;
+    color: $main-font-color;
     p {
       margin: 0;
     }

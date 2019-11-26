@@ -34,6 +34,7 @@ const app = new Vue({
   el: "#app",
   created() {
     AOS.init({
+      disable: 'tablet',
       offset: 0,
       duration: 500,
       once: true

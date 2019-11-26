@@ -32,4 +32,13 @@
     bottom: 25px;
     right: 25px;
   }
+  button {
+    opacity: 1;
+    background-color: #31afd5;
+    color: #fff;
+    &:hover {
+      color: #fff;
+      background-color: #31afd5;
+    }
+  }
 }

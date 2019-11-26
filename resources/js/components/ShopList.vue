@@ -7,6 +7,7 @@
           class="form-control input-field"
           placeholder="wybierz miasto"
           @place_changed="setPlace"
+          ref="input"
         ></gmap-autocomplete>
         <i v-show="reset" class="fas fa-backspace" @click="resetPlace"></i>
       </div>
@@ -81,6 +82,7 @@ export default {
     resetPlace() {
       Event.$emit("reset-place");
       this.$refs.input.$el.value = "";
+      this.$refs.input.$el.focus();
       this.reset = false;
     },
 

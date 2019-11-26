@@ -6,7 +6,6 @@ import VModal from "vue-js-modal";
 import BackToTop from "vue-backtotop";
 import VueScrollTo from "vue-scrollto";
 import Carousel3d from "vue-carousel-3d";
-import VueScrollReveal from "vue-scroll-reveal";
 import * as VueGoogleMaps from "vue2-google-maps";
 import VueLazyload from "vue-lazyload";
 
@@ -14,7 +13,7 @@ window.Vue = Vue;
 
 Vue.use(VueGoogleMaps, {
   load: {
-    key: "",
+    key: "AIzaSyC6OHJWJ2alhTu2gsx4wDC-hYV9U5UhSbU",
     libraries: "places",
     region: "PL",
     language: "pl"
@@ -23,7 +22,6 @@ Vue.use(VueGoogleMaps, {
 });
 
 Vue.use(VueLazyload);
-Vue.use(VueScrollReveal);
 Vue.use(Carousel3d);
 Vue.use(VueScrollTo);
 Vue.use(BackToTop);

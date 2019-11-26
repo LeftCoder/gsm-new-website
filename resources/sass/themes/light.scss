@@ -2,8 +2,8 @@
   --page-background-color: #fff;
   --page-details-color: #0045b7;
   --contact-bg-color: #fff;
-  --section-title-color: #707070;
-  --input-color: #707070;
+  --section-title-color: $main-font-color;
+  --input-color: $main-font-color;
   --hover-color: #0d6bd9;
   --floating-squares-color: #eff9fc;
 
@@ -11,6 +11,6 @@
   --card-bg-active-color: #edeeee;
   --card-bg-hover-color: #f7f7f7;
 
-  --gallery-empty: #f7f7f7;
+  --empty-border: #f7f7f7;
   --section-mobile-color: #edeeee;
 }

@@ -34,7 +34,7 @@
       </div>
       <div class="service-contact">
         <a href="tel:533-399-818">
-          <button title="zadzwoń do serwisu" type="button" class="btn btn-secondary btn-to-top">
+          <button title="zadzwoń do serwisu" type="button" class="btn btn-to-top">
             <i class="fas fa-phone"></i>
           </button>
         </a>

@@ -34,10 +34,7 @@
       justify-content: center;
       margin-bottom: 50px;
       position: relative;
-      @media (max-width: 420px) {
-        margin-bottom: 15px;
-      }
-      @media (min-width: 768px) and (max-width: 1200px) {
+      @media (min-width: 769px) and (max-width: 1200px) {
         margin-bottom: 0;
       }
       &::before {
@@ -57,12 +54,15 @@
       }
       &.empty {
         width: 100%;
+        @media (max-width: 1200px) {
+          margin-bottom: 30px;
+        }
         &::before {
           display: none;
         }
         .articles-empty {
           font-family: "Roboto", sans-serif;
-          border: 3px solid #f2f2f2;
+          border: 3px solid $empty-border;
           border-radius: 20px;
           padding: 20px;
           width: 100%;
@@ -70,7 +70,10 @@
           letter-spacing: 2px;
           text-align: center;
           font-weight: 500;
-          color: #707070;
+          color: $main-font-color;
+          @media (max-width: 768px) {
+            font-size: 1.3rem;
+          }
         }
       }
       .single-article {

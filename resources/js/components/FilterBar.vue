@@ -11,7 +11,7 @@
         />
         <div v-show="filterText.length > 0" class="input-group-append">
           <button type="button" class="btn btn-default" @click="resetFilter">
-            <i class="fas fa-backspace"></i>
+            <i class="fas fa-backspace" title="wyczyść wyszukiwanie"></i>
           </button>
         </div>
       </div>

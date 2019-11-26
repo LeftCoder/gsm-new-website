@@ -21,7 +21,7 @@
     DELETE /posts/1 (destroy - delete post from database)
 */
 
-Route::redirect('/zaplecze', '/zaplecze');
+Route::redirect('zaplecze', '/zaplecze');
 
 // Authentication Routes...
 Route::get('gsm-admin', 'Auth\LoginController@showLoginForm')->name('login');
