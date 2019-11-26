@@ -9,6 +9,7 @@
         class="image-wrapper"
       >
         <img class="image" :data-src="image.href" :alt="image.title" @click="index = imageIndex" />
+        <div class="images-counter">{{ images.length }}</div>
         <div class="overlay">{{ image.title }}</div>
       </div>
     </div>

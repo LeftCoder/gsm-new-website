@@ -46,6 +46,20 @@
         transition: all 0.3s ease-in-out;
         z-index: 2;
       }
+      .images-counter {
+        display: none;
+        @media (max-width: 420px) {
+          display: block;
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          color: #fff;
+          background-color: #000;
+          font-weight: 500;
+          font-size: 2rem;
+          padding: 5px;
+        }
+      }
     }
   }
 

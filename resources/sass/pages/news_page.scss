@@ -20,6 +20,11 @@
         display: none;
       }
     }
+    &.empty {
+      &::after {
+        display: none;
+      }
+    }
     .articles {
       display: flex;
       flex-direction: column;

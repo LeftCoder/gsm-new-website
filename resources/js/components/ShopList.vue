@@ -5,7 +5,7 @@
       <div class="input-wrapper">
         <gmap-autocomplete
           class="form-control input-field"
-          placeholder="Wybierz miasto"
+          placeholder="wybierz miasto"
           @place_changed="setPlace"
         ></gmap-autocomplete>
         <i v-show="reset" class="fas fa-backspace" @click="resetPlace"></i>

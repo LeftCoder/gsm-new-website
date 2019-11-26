@@ -21,9 +21,11 @@
 # w prawym dolnym rogu ikona umożliwiająca kontakt z serwisem w formie słuchawki
 
 # efekty pojawiania się elementów na stronie (animate onscroll)
-- rwd całej strony
 # helmet component dla vue czyli SEO dla całej witryny
+# google analytics
+- rwd całej strony
 - optymalizacja kodu (optymalizacja zdjęć, produkcyjna wersja kodu)
 - deployment
-- google seo
 - testy
+- licznik zdjęć na urządzeniach mobilnych - w rogu ogólna liczba 
+- licznik zdjęć na urządzeniach mobilnych - po powiększeniu np. 1 z 20

@@ -71,14 +71,18 @@
       <div class="section-title">
         <h2>Aktualności</h2>
       </div>
-      <div class="articles">
-        @foreach ($twoLatestPosts as $post)
-        <div class="single-article" data-aos="zoom-in">
-          <span class="latest">{{ $post->created_at->diffForHumans() }}</span>
-          <h3>{{ $post->title }}</h3>
-          {!! @$post->body !!}
-        </div>
-        @endforeach
+    <div class="articles {{ empty($twoLatestPosts->items) ? 'empty' : ''}}">
+        @if (!empty($twoLatestPosts->items))
+          @foreach ($twoLatestPosts as $post)
+          <div class="single-article" data-aos="zoom-in">
+            <span class="latest">{{ $post->created_at->diffForHumans() }}</span>
+            <h3>{{ $post->title }}</h3>
+            {!! @$post->body !!}
+          </div>
+          @endforeach
+        @else
+          <div class="articles-empty">Nie ma postów do wyświetlenia.</div>
+        @endif
       </div>
       <div class="cta" data-aos="fade-up">
         <a href="aktualnosci">

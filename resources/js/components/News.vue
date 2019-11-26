@@ -1,5 +1,5 @@
 <template>
-  <div class="articles-wrapper">
+  <div class="articles-wrapper" :class="{'empty': articles.length === 0}">
     <div v-if="articles.length > 0" class="articles">
       <div class="single-article" v-for="(article, index) in articles" :key="index">
         <span class="latest">{{ created_at(article.created_at) }}</span>
@@ -60,21 +60,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss" scoped>
-.articles-wrapper {
-  width: 100%;
-  .articles-empty {
-    font-family: "Roboto", sans-serif;
-    border: 3px solid #f2f2f2;
-    border-radius: 20px;
-    padding: 20px;
-    width: 100%;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-    font-weight: 500;
-    color: #707070;
-  }
-}
-</style>

@@ -1,6 +1,6 @@
 <template>
   <div class="device-results">
-    <filter-bar placeholder="Podaj model telefonu"></filter-bar>
+    <filter-bar placeholder="podaj model telefonu"></filter-bar>
     <div v-if="results.length > 0 && !is_loading" class="results-wrapper">
       <div class="single-result" v-for="(part, index) in results" :key="index">
         <div class="result-description">
