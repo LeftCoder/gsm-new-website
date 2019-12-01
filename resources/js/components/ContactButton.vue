@@ -7,7 +7,7 @@
     >Kontakt</button>
     <modal height="auto" width="100%" :name="modalName" :pivotY="1">
       <div class="content">
-        <h2>W możemy pomóc?</h2>
+        <h2>W czym możemy pomóc?</h2>
 
         <form autocomplete="off" @submit.prevent="contactUs" @keydown="submitted = false">
           <div class="first-part">

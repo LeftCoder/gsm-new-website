@@ -27,14 +27,16 @@ Vue.component(
 
 Vue.config.ignoredElements = ["trix-editor"];
 
+import CookieLaw from "vue-cookie-law";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const app = new Vue({
   el: "#app",
+  components: { CookieLaw },
   created() {
     AOS.init({
-      disable: 'tablet',
+      disable: "mobile",
       offset: 0,
       duration: 500,
       once: true

@@ -1,0 +1,22 @@
+.Cookie--gsm-theme {
+  border-top: 1px solid #222029;
+  background-color: #2f2f40;
+  padding: 15px;
+  .Cookie__content {
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+  }
+  .Cookie__button {
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $contrast-font-color;
+    background-color: $secondary-font-color;
+    border: 3px solid $secondary-font-color;
+    width: 120px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
+}

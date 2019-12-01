@@ -3,6 +3,8 @@
 </template>
 
 <script>
+import inView from "in-viewport";
+
 export default {
   props: ["to"],
   data() {
@@ -19,7 +21,9 @@ export default {
   },
 
   mounted() {
-    this.interval = setInterval(this.tick, 20);
+    inView(this.$el, () => {
+      this.interval = setInterval(this.tick, 20);
+    });
   },
 
   methods: {

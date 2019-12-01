@@ -2,26 +2,19 @@ footer {
   background-color: $main-details-color;
   .footer-wrapper {
     font-family: "Montserrat", sans-serif;
-    height: 500px;
-    flex-direction: column;
     color: $contrast-font-color;
-    position: relative;
-    @media (max-width: 420px) {
-      height: auto;
-    }
     .footer-links {
       display: flex;
       justify-content: space-between;
-      height: calc(100% - 85px);
       @media (max-width: 420px) {
         flex-direction: column;
       }
-      @media (min-width: 421px) and (max-width: 768px) {
+      @media (min-width: 421px) and (max-width: 995px) {
         flex-wrap: wrap;
       }
       .footer-column {
         margin-top: 100px;
-        @media (max-width: 768px) {
+        @media (max-width: 995px) {
           margin-top: 50px;
           &:last-child {
             margin-top: 10px;
@@ -64,12 +57,12 @@ footer {
       }
     }
     .footer-copy {
+      margin-top: 15px;
       font-family: "Roboto", sans-serif;
       border-top: 1px solid $secondary-font-color;
       display: flex;
       justify-content: center;
       align-items: center;
-      position: absolute;
       width: 100%;
       padding: 30px;
       bottom: 0;

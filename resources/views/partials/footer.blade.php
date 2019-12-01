@@ -12,10 +12,9 @@
         <h3>Nawigacja</h3>
         <p><a href="/aktualnosci">aktualności</a></p>
         <p><a href="/nasze-sklepy">nasze sklepy</a></p>
-        <p><a href="/sprzedaj-smartfona">sprzedaj smartfona</a></p>
         <p><a href="/galeria">galeria</a></p>
         <p><a href="/serwis">serwis</a></p>
-        <p><a href="/kariera">kariera</a></p>
+        <p><a href="/sprzedaj-smartfona">sprzedaj smartfona</a></p>
       </div>
       <div class="footer-column">
         <h3>Adres</h3>
@@ -36,4 +35,9 @@
       <div class="copy-text">&copy; 2019 Świat GSM. Wszelkie prawa zastrzeżone.</div>
     </div>
   </div>
+    <cookie-law 
+      button-text="Rozumiem"
+      message="Ta witryna używa plików cookies, aby dać Tobie jak najlepsze doświadczenie płynące z jej korzystania."
+      theme="gsm-theme"
+    ></cookie-law>
 </footer>

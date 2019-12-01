@@ -4,7 +4,7 @@
   padding: 5px 0;
   background-color: transparent;
   height: 70px;
-  @media (max-width: 1024px) {
+  @media (max-width: 1199px) {
     background-color: #fff;
   }
   @media (max-width: 320px) {
@@ -27,11 +27,11 @@
         height: 135px;
       }
     }
-    @media (max-width: 1024px) {
+    @media (max-width: 1365px) {
       display: none;
     }
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 1199px) {
     .hidden-logo-link {
       position: absolute;
       right: 0;
@@ -47,6 +47,9 @@
       position: absolute;
       top: 12px;
       left: 0px;
+      &:focus {
+        outline: none;
+      }
       .navbar-toggler-icon {
         display: flex;
         justify-content: center;
@@ -81,6 +84,22 @@
       }
     }
   }
+  @media (min-width: 1200px) and (max-width: 1365px) {
+    #navbarNavAltMarkup {
+      .navbar-nav {
+        margin: 0 50px;
+        justify-content: center;
+      }
+    }
+  }
+  @media (min-width: 1366px) and (max-width: 1600px) {
+    #navbarNavAltMarkup {
+      .navbar-nav {
+        margin: 0 50px;
+      }
+    }
+  }
+
   .navbar-collapse {
     justify-content: flex-end;
     .navbar-nav {
